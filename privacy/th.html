@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>นโยบายความเป็นส่วนตัวของ CapScroll</title>
+<link rel="icon" type="image/png" href="../icon.png">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --line: #d8dee4;
+  --accent: #0b62d6;
+  --code-bg: #f2f4f7;
+  --chip-bg: #f2f4f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a;
+    --fg: #e6e8eb;
+    --muted: #9aa3ad;
+    --line: #2f343a;
+    --accent: #6cb0ff;
+    --code-bg: #24282d;
+    --chip-bg: #22262b;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header { display: flex; align-items: center; gap: .6rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+header img { width: 32px; height: 32px; }
+header .brand { font-weight: 600; font-size: 1.05rem; }
+nav.languages { margin: 1rem 0 0; display: flex; align-items: flex-start; gap: .5rem; }
+nav.languages > svg { flex: none; margin-top: .4rem; color: var(--muted); }
+nav.languages ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+nav.languages a {
+  display: inline-block; padding: .2rem .65rem; border-radius: 999px;
+  background: var(--chip-bg); color: var(--fg); text-decoration: none; font-size: .875rem; line-height: 1.6;
+}
+nav.languages a:hover { text-decoration: underline; }
+nav.languages a[aria-current="page"] { background: var(--accent); color: var(--bg); font-weight: 600; }
+main h1 { font-size: 1.75rem; line-height: 1.3; margin: 1.75rem 0 .5rem; }
+main h2 { font-size: 1.2rem; line-height: 1.4; margin: 2rem 0 .5rem; }
+main h3 { font-size: 1.05rem; margin: 1.5rem 0 .5rem; }
+main p, main ul { margin: .6rem 0; }
+main ul { padding-left: 1.4rem; }
+main li { margin: .3rem 0; }
+main a { color: var(--accent); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; background: var(--code-bg); padding: .1em .35em; border-radius: 4px; }
+.index-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: .5rem; }
+.index-list a { display: block; padding: .6rem .8rem; border: 1px solid var(--line); border-radius: 8px; color: var(--fg); text-decoration: none; }
+.index-list a:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><img src="../icon.png" alt=""><span class="brand">CapScroll</span></header>
+<nav class="languages" aria-label="Languages"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><ul>
+<li><a href="ko.html" lang="ko" hreflang="ko">한국어</a></li>
+<li><a href="en.html" lang="en" hreflang="en">English</a></li>
+<li><a href="ja.html" lang="ja" hreflang="ja">日本語</a></li>
+<li><a href="zh_TW.html" lang="zh-TW" hreflang="zh-TW">繁體中文</a></li>
+<li><a href="es.html" lang="es" hreflang="es">Español</a></li>
+<li><a href="pt_BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
+<li><a href="fr.html" lang="fr" hreflang="fr">Français</a></li>
+<li><a href="de.html" lang="de" hreflang="de">Deutsch</a></li>
+<li><a href="it.html" lang="it" hreflang="it">Italiano</a></li>
+<li><a href="ru.html" lang="ru" hreflang="ru">Русский</a></li>
+<li><a href="vi.html" lang="vi" hreflang="vi">Tiếng Việt</a></li>
+<li><a href="id.html" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+<li><a href="th.html" lang="th" hreflang="th" aria-current="page">ไทย</a></li>
+<li><a href="tr.html" lang="tr" hreflang="tr">Türkçe</a></li>
+<li><a href="hi.html" lang="hi" hreflang="hi">हिन्दी</a></li>
+<li><a href="pl.html" lang="pl" hreflang="pl">Polski</a></li>
+</ul></nav>
+<main>
+<h1>นโยบายความเป็นส่วนตัวของ CapScroll</h1>
+<p>วันที่มีผลบังคับใช้: 14 ตุลาคม พ.ศ. 2569 (ค.ศ. 2026)</p>
+<p>CapScroll ไม่ส่งข้อมูลของผู้ใช้ไปที่ใดเลย ข้อมูลทั้งหมดที่ส่วนขยายจัดการจะอยู่ในเบราว์เซอร์บนอุปกรณ์ของผู้ใช้เองเท่านั้น นโยบายนี้อธิบายว่าส่วนขยายเข้าถึงข้อมูลใด เก็บข้อมูลไว้ที่ใด และผู้ใช้สามารถลบข้อมูลดังกล่าวได้อย่างไร</p>
+<h2 id="s1">1. ขอบเขตของนโยบายนี้</h2>
+<p>นโยบายนี้ใช้กับส่วนขยายเบราว์เซอร์ CapScroll สำหรับ Google Chrome (&quot;ส่วนขยาย&quot;) และไม่ครอบคลุมถึงเว็บไซต์ที่ผู้ใช้จับภาพหรือซอฟต์แวร์อื่นใด</p>
+<h2 id="s2">2. ข้อมูลที่ส่วนขยายเข้าถึง</h2>
+<p>ส่วนขยายจะทำงานเฉพาะเมื่อผู้ใช้เริ่มการจับภาพด้วยตนเอง (จากป๊อปอัปในแถบเครื่องมือหรือแป้นพิมพ์ลัด) จากนั้นส่วนขยายจะเข้าถึงข้อมูลต่อไปนี้ และเฉพาะสำหรับแท็บนั้นเท่านั้น</p>
+<ul>
+<li><strong>สิ่งที่แท็บแสดงบนหน้าจอ</strong> ส่วนขยายจะถ่ายภาพหน้าจอของหน้าเว็บขณะเลื่อนหน้า แล้วนำมาต่อกันเป็นภาพเดียว สำหรับการจับภาพบริเวณ องค์ประกอบ หรือพื้นที่เลื่อน ส่วนขยายจะเก็บไว้เฉพาะส่วนที่ผู้ใช้เลือก</li>
+<li><strong>เลย์เอาต์ของหน้าเว็บ</strong> ระหว่างการจับภาพ สคริปต์จะทำงานในแท็บนั้นเพื่อเลื่อนหน้า วัดขนาดของหน้า และให้ผู้ใช้เลือกบริเวณหรือองค์ประกอบ สคริปต์ดังกล่าวไม่เก็บรวบรวมข้อความ เนื้อหาในแบบฟอร์ม หรือข้อมูลอื่นของหน้าเว็บ</li>
+<li><strong>ชื่อและที่อยู่ของแท็บ</strong> ที่อยู่จะถูกจัดเก็บโดยตัดส่วนที่อยู่หลัง <code>?</code> หรือ <code>#</code> (คำค้นหา โทเค็น และส่วนที่คล้ายกัน) ออก และไม่มีชื่อผู้ใช้หรือรหัสผ่านใดที่อยู่ในที่อยู่นั้น</li>
+<li><strong>สิ่งที่ผู้ใช้เพิ่มในเครื่องมือแก้ไข</strong> ได้แก่ รูปทรง ข้อความ การครอบตัด บริเวณที่ทำให้เบลอหรือเป็นโมเสก และการแก้ไขอื่นที่คล้ายกัน</li>
+<li><strong>การตั้งค่าของผู้ใช้</strong> ได้แก่ ภาษา การดำเนินการหลังจับภาพ ความสูงสูงสุดในการจับภาพ จำนวนภาพที่เก็บไว้ และตัวเลือกการบันทึก (รูปแบบ คุณภาพ ขนาด และตัวเลือกอื่นที่คล้ายกัน)</li>
+</ul>
+<p>ส่วนขยายไม่เข้าถึงประวัติการท่องเว็บ คุกกี้ รหัสผ่าน หรือแท็บใดที่ผู้ใช้ไม่ได้จับภาพ</p>
+<h2 id="s3">3. สถานที่จัดเก็บข้อมูล</h2>
+<p>ข้อมูลทั้งหมดจะจัดเก็บไว้ในเบราว์เซอร์บนอุปกรณ์ของผู้ใช้เท่านั้น</p>
+<ul>
+<li><strong>IndexedDB</strong> (ฐานข้อมูลเฉพาะของส่วนขยาย): ภาพที่จับ ชื่อและที่อยู่ของหน้าเว็บ การแก้ไขของผู้ใช้ และภาพขนาดย่อที่แสดงในหน้าประวัติ</li>
+<li><strong><code>chrome.storage.local</code></strong>: การตั้งค่าและภาษา ตัวเลือกการบันทึก และสถานะว่าได้ปิดการ์ดต้อนรับแล้วหรือไม่</li>
+<li><strong><code>chrome.storage.session</code></strong>: ข้อความแสดงข้อผิดพลาดล่าสุด เพื่อให้ป๊อปอัปแสดงได้ Chrome จะล้างข้อมูลนี้เมื่อปิดเบราว์เซอร์</li>
+<li><strong><code>localStorage</code></strong> ของหน้าต่างๆ ของส่วนขยาย: สำเนาชั่วคราวของการแก้ไขล่าสุด ซึ่งเก็บไว้เพื่อไม่ให้การแก้ไขสูญหายหากแท็บถูกปิดก่อนบันทึก สำเนานี้จะถูกนำออกเมื่อการแก้ไขได้รับการบันทึกลงในประวัติการจับภาพแล้ว หรือเมื่อภาพที่จับนั้นถูกลบ</li>
+</ul>
+<p>ส่วนขยายไม่มีเซิร์ฟเวอร์และไม่ส่งคำขอใดๆ ผ่านเครือข่าย ไม่มีข้อมูลใดถูกส่งไปยังนักพัฒนาหรือบุคคลอื่นใด</p>
+<p>ภาพที่ผู้ใช้บันทึกเป็นไฟล์หรือคัดลอกไปยังคลิปบอร์ดจะออกจากส่วนขยายตามคำขอของผู้ใช้ หลังจากนั้น ภาพดังกล่าวจะได้รับการจัดการโดยคอมพิวเตอร์ของผู้ใช้และแอปที่ผู้ใช้ใช้งาน และไม่อยู่ภายใต้นโยบายนี้</p>
+<h2 id="s4">4. วิธีการใช้ข้อมูล</h2>
+<p>ข้อมูลจะใช้เพื่อแสดงภาพที่จับ ให้ผู้ใช้แก้ไข บันทึก และคัดลอกภาพที่จับ และเก็บประวัติการจับภาพไว้ในหน้าประวัติเท่านั้น และจะไม่ใช้เพื่อวัตถุประสงค์อื่นใด</p>
+<p>การใช้ข้อมูลที่ CapScroll จัดการเป็นไปตาม<a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">นโยบายข้อมูลผู้ใช้ของ Chrome เว็บสโตร์</a> รวมถึงข้อกำหนด Limited Use (การใช้งานแบบจำกัด)</p>
+<h2 id="s5">5. การแบ่งปัน การขาย โฆษณา และการวิเคราะห์</h2>
+<p>นักพัฒนาไม่เก็บรวบรวม ไม่รับ ไม่ขาย ไม่ให้เช่า และไม่แบ่งปันข้อมูลของผู้ใช้ ส่วนขยายไม่มีโฆษณา ไม่มีการวิเคราะห์ ไม่มีการติดตาม และไม่มีโค้ดของบุคคลที่สามที่ส่งข้อมูลไปที่ใด</p>
+<h2 id="s6">6. สิทธิ์และเหตุผลที่ต้องใช้</h2>
+<ul>
+<li><strong><code>activeTab</code></strong>: เพื่อจับภาพเฉพาะแท็บที่ผู้ใช้เริ่มการจับภาพ และเฉพาะในขณะนั้นเท่านั้น นอกเหนือจากนี้ ส่วนขยายไม่มีสิทธิ์เข้าถึงเว็บไซต์ใด</li>
+<li><strong><code>scripting</code></strong>: เพื่อเรียกใช้สคริปต์การจับภาพในแท็บนั้น (การเลื่อน การวัดขนาดหน้า การเลือกบริเวณหรือองค์ประกอบ)</li>
+<li><strong><code>storage</code></strong>: เพื่อจดจำการตั้งค่าและตัวเลือกการบันทึกของผู้ใช้</li>
+<li><strong><code>unlimitedStorage</code></strong>: เพื่อเก็บภาพที่จับซึ่งมีความยาวมากไว้ในประวัติการจับภาพบนอุปกรณ์ของผู้ใช้</li>
+<li><strong><code>offscreen</code></strong>: เพื่อสร้างภาพในหน้าที่ซ่อนอยู่ เมื่อผู้ใช้เลือกคัดลอกหรือบันทึกทันทีหลังจับภาพโดยไม่เปิดเครื่องมือแก้ไข</li>
+<li><strong><code>clipboardWrite</code></strong> (ไม่บังคับ): จะขอเฉพาะเมื่อผู้ใช้ตั้งค่า &quot;หลังจับภาพ&quot; เป็น &quot;คัดลอกไปยังคลิปบอร์ด&quot; เพื่อให้คัดลอกภาพได้โดยไม่ต้องคลิกเพิ่ม ผู้ใช้สามารถปฏิเสธหรือปิดสิทธิ์นี้ได้ทุกเมื่อ ปุ่มคัดลอกของเครื่องมือแก้ไขทำงานได้โดยไม่ต้องใช้สิทธิ์นี้</li>
+</ul>
+<p>ส่วนขยายไม่ขอสิทธิ์เข้าถึงเว็บไซต์ (สิทธิ์ของโฮสต์)</p>
+<h2 id="s7">7. การเก็บรักษาและการลบข้อมูล</h2>
+<ul>
+<li>ประวัติการจับภาพจะเก็บภาพที่จับไว้ได้ไม่เกินจำนวนที่การตั้งค่า &quot;จำนวนที่เก็บไว้&quot; กำหนด (ค่าเริ่มต้นคือ 50 ภาพ) เมื่อผู้ใช้บันทึกภาพที่จับใหม่เกินจำนวนดังกล่าว ภาพที่เก่าที่สุดจะถูกลบ</li>
+<li>ผู้ใช้สามารถลบภาพที่จับทีละภาพหรือทั้งหมดได้ในหน้าประวัติได้ทุกเมื่อ</li>
+<li>การนำส่วนขยายออกจาก Chrome จะลบข้อมูลทั้งหมดที่ส่วนขยายจัดเก็บไว้</li>
+<li><strong>หน้าต่างที่ไม่ระบุตัวตน</strong>: หากผู้ใช้อนุญาตให้ส่วนขยายทำงานในโหมดไม่ระบุตัวตน ภาพที่จับในหน้าต่างที่ไม่ระบุตัวตนจะไม่ถูกเพิ่มลงในประวัติการจับภาพเลย ชื่อและที่อยู่ของหน้าเว็บก็จะไม่ถูกเก็บไว้เช่นกัน ภาพที่จับจะอยู่ในหน่วยความจำจนกว่าเครื่องมือแก้ไขจะเปิดภาพนั้นเท่านั้น และจะถูกล้างหลังจาก 2 นาทีหากไม่ได้เปิด</li>
+</ul>
+<h2 id="s8">8. เด็ก</h2>
+<p>ส่วนขยายไม่ได้มุ่งเป้าไปที่เด็ก และไม่เก็บรวบรวมข้อมูลของบุคคลใดโดยเจตนา รวมถึงเด็ก</p>
+<h2 id="s9">9. การไม่รับประกัน</h2>
+<p>ส่วนขยายนี้ให้บริการ &quot;ตามสภาพ&quot; โดยไม่มีการรับประกันใดๆ ภายใต้สัญญาอนุญาตของส่วนขยาย คือ <a href="https://polyformproject.org/licenses/noncommercial/1.0.0/">PolyForm Noncommercial License 1.0.0</a> ภายในขอบเขตที่กฎหมายอนุญาต นักพัฒนาไม่ต้องรับผิดต่อความสูญเสียหรือความเสียหายใดๆ ที่เกิดจากการใช้ส่วนขยาย รวมถึงการสูญหายของภาพที่จับ</p>
+<h2 id="s10">10. การเปลี่ยนแปลงนโยบายนี้</h2>
+<p>หากนโยบายนี้มีการเปลี่ยนแปลง ฉบับใหม่จะเผยแพร่ไว้ในหน้านี้ และวันที่มีผลบังคับใช้ที่ด้านบนจะได้รับการปรับปรุง</p>
+<h2 id="s11">11. การติดต่อ</h2>
+<p>หากมีคำถามเกี่ยวกับนโยบายนี้ โปรดส่งอีเมลไปที่ <a href="mailto:haiseek.co@gmail.com">haiseek.co@gmail.com</a></p>
+<h2 id="s12">12. คำแปล</h2>
+<p>นโยบายนี้มีให้บริการในหลายภาษา หากคำแปลแตกต่างจากฉบับภาษาอังกฤษ ให้ถือฉบับภาษาอังกฤษเป็นหลัก</p>
+<h2 id="s13">13. วันที่มีผลบังคับใช้</h2>
+<p>นโยบายนี้มีผลบังคับใช้ตั้งแต่วันที่ 14 ตุลาคม พ.ศ. 2569 (ค.ศ. 2026)</p>
+</main>
+</div>
+</body>
+</html>
